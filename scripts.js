@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let output = document.getElementById('output');
-    let buttons = document.getElementsByClassName('tool--btn');
+    const output = document.getElementById('output');
+    const buttons = document.getElementsByClassName('tool--btn');
+    const saveButton = document.getElementById('save-content');
 
     for (let btn of buttons) {
         btn.addEventListener('click', () => {
@@ -12,5 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.execCommand(cmd, false, null);
             }
         });
+    }
+
+    saveButton.addEventListener('click', () => {
+        const content = output.innerHTML;
+        localStorage.setItem('savedContent', content);
+        alert('Content saved!');
+    });
+
+    // Load saved content
+    if (localStorage.getItem('savedContent')) {
+        output.innerHTML = localStorage.getItem('savedContent');
     }
 });

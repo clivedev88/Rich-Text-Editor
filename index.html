@@ -12,49 +12,75 @@
         <div class="toolbar">
             <ul class="tool-list">
                 <li class="tool">
-                    <button type="button" class="tool--btn" data-command="'justifyLeft" >
+                    <button type="button" class="tool--btn" data-command="justifyLeft" title="Alinhar à esquerda">
                         <i class="fas fa-align-left"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="justifyCenter">
+                    <button type="button" class="tool--btn" data-command="justifyCenter" title="Centralizar">
                         <i class="fas fa-align-center"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="bold">
+                    <button type="button" class="tool--btn" data-command="justifyRight" title="Alinhar à direita">
+                        <i class="fas fa-align-right"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" data-command="justifyFull" title="Justificar">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" data-command="bold" title="Negrito">
                         <i class="fas fa-bold"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="italic">
+                    <button type="button" class="tool--btn" data-command="italic" title="Itálico">
                         <i class="fas fa-italic"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="underline">
+                    <button type="button" class="tool--btn" data-command="underline" title="Sublinhar">
                         <i class="fas fa-underline"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="insertOrderedList">
+                    <button type="button" class="tool--btn" data-command="strikethrough" title="Tachado">
+                        <i class="fas fa-strikethrough"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" data-command="insertOrderedList" title="Lista ordenada">
                         <i class="fas fa-list-ol"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="insertUnorderedList">
+                    <button type="button" class="tool--btn" data-command="insertUnorderedList" title="Lista não ordenada">
                         <i class="fas fa-list-ul"></i>
                     </button>
                 </li>
                 <li class="tool">
-                    <button class="tool--btn" type="button" data-command="createlink">
+                    <button type="button" class="tool--btn" data-command="createlink" title="Inserir link">
                         <i class="fas fa-link"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" data-command="undo" title="Desfazer">
+                        <i class="fas fa-undo"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" data-command="redo" title="Refazer">
+                        <i class="fas fa-redo"></i>
                     </button>
                 </li>
             </ul>
         </div>
 
         <div id="output" contenteditable="true"></div>
+        <button id="save-content">Salvar Conteúdo</button>
     </div>
     <script src="scripts.js"></script>
 </body>
